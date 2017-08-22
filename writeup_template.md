@@ -1,8 +1,16 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 
-##Writeup Template
+I learn to drive from my brother who has the best record of good driver. 
+The way he drive is smooth, stable, and very careful to what the degree that 
+he never has any acident in his driving record.
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+While he teach me to drive, I inherit this behavoir and I am also never have 
+any acident or ticket with bad driving behavoir.
+
+
+## Writeup Template
+
+### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
