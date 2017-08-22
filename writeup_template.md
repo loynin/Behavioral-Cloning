@@ -1,18 +1,24 @@
 # **Behavioral Cloning** 
 
 I learn to drive from my brother who has the best record of good driver. 
-The way he drive is smooth, stable, and very careful to what the degree that 
-he never has any acident in his driving record.
+The way he drive is smooth, stable, and carefully to what the degree that 
+he never has any acident or driving tickent in his life of driving.
 
-While he teach me to drive, I inherit this behavoir and I am also never have 
-any acident or ticket with bad driving behavoir.
+While I learn to drive from him, I inherit this behavoir and I am also never have 
+any acident or traffic ticket involving a bad driving behavoir because I always maintain
+the good driving behavior.
+
+While working on "Behavioral Cloning Project" for self-driving car, I learned that
+the self-driving car also immitate to what I have driven during my training session.
+The self-driving car drive poorly in autonomous mode after I have driven poorly while I train
+it to drive. On the other hand, the self-driving car will drive better by itself after I have 
+driven really good in training session.
+
+Now, let take a look on how the self-driving car learns from my training and how it maintain
+to keep the safe and good driving behavior on the road in order to keep the passengers and 
+the other cars on the road safe.
 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
 
 **Behavioral Cloning Project**
 
