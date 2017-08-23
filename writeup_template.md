@@ -70,7 +70,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 As suggest by lesson from udacity.com, I follow the nVidia CNN for my model architecture. Below is the picture of how the model is design:
 
-![alt text][image1]
+<img src="images/cnn-architecture.png" width="160">
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
