@@ -53,19 +53,25 @@ My project includes the following files:
 * writeup_report.md or writeup_report.pdf summarizing the results
 * readme.md this file
 
-####2. Submission includes functional code
+### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+### 3. Submission code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+---
+# Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+### 1. An appropriate model architecture has been employed
+
+I follow the nVidia CNN for my training. Below is the picture how the model
+is design:
+
+![alt text][image1]
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
