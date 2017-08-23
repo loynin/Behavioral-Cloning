@@ -68,8 +68,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 ### 1. An appropriate model architecture has been employed
 
-I follow the nVidia CNN for my training. Below is the picture how the model
-is design:
+As suggest by lesson from udacity.com, I follow the nVidia CNN for my model architecture. Below is the picture of how the model is design:
 
 ![alt text][image1]
 
