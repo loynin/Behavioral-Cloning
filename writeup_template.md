@@ -72,6 +72,11 @@ As suggest by lesson from udacity.com, I follow the nVidia CNN for my model arch
 
 <img src="images/cnn-architecture.png" width="460">
 
+There are some change to the original model in order to make it work to the project. Below is the architecture of the model:
+
+Input Layer | Input shape 160x320x3
+--- | ---
+
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
 The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
