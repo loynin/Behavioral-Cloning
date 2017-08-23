@@ -20,7 +20,7 @@ the other cars on the road safe.
 
 
 
-**Behavioral Cloning Project**
+# **Project Structure**
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
