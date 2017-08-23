@@ -98,45 +98,55 @@ As I have mention above, I have added to the model the dropout layers in order t
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually.
 
-####4. Appropriate training data
+### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road and reverse direction of driving. 
 
-For details about how I created the training data, see the next section. 
+# Model Architecture and Training Strategy
 
-###Model Architecture and Training Strategy
+### 1. Solution Design Approach
 
-####1. Solution Design Approach
+The overall strategy for deriving a model architecture was adapted from nVideo CNN self-driving architecture. 
 
-The overall strategy for deriving a model architecture was to ...
-
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+I have first try to use LeNet model architecture and then nVidia model architecture. After training and testing, I saw the accuration of the nVideo model was better than LeNet.Therefore, I have chosen a convolution neural network model similar to the nVidia model because I thought this model might be appropriate because nVidia has used this model for their self-driving car. 
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
 
-To combat the overfitting, I modified the model so that ...
+To combat the overfitting, I modified the model by adding three dropout layer with 20% rate. Then I see the improvement of the model both on training also in the autonomouse driving mode. 
 
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track, this happen because I was drive bad during training. To improve the driving behavior in these cases, I have drive again in the simulator in training mode in the well driving behavior. After I train with new dataset, I get the better result.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+### 2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture consisted of a convolution neural network with the following layers
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+Layer | Description
+--- | ---
+Input | Input shape 160x320x3 RGB 
+CNN 5x5 | 2x2 stride
+Dropout | Dropout layer with 20% rate
+CNN 5x5 | 2x2 stride CNN
+Dropout | Dropout layer with 20% rate
+CNN 5x5 | 2x2 stride CNN
+Dropout | Dropout layer with 20% rate
+CNN 3x3 | 
+CNN 3x3 |
+Flatten layer | 
+Fully-connected | 100 
+Fully-connected | 50
+Fully-connected | 1
 
-![alt text][image1]
-
-####3. Creation of the Training Set & Training Process
+### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+
+<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="100">
 
 ![alt text][image2]
 
