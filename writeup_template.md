@@ -2,7 +2,7 @@
 
 I learn to drive from my brother who has the best record of good driver. 
 The way he drive is smooth, stable, and carefully to what the degree that 
-he never has any acident or driving tickent in his life of driving.
+he never has any acident or driving ticket in his life of driving.
 
 While I learn to drive from him, I inherit this behavoir and I am also never have 
 any acident or traffic ticket involving a bad driving behavoir because I always maintain
@@ -10,7 +10,7 @@ the good driving behavior.
 
 While working on "Behavioral Cloning Project" for self-driving car, I learned that
 the self-driving car also immitate to what I have driven during my training session.
-The self-driving car drive poorly in autonomous mode after I have driven poorly while I train
+The self-driving car drives poorly in autonomous mode after I have driven poorly while I train
 it to drive. On the other hand, the self-driving car will drive better by itself after I have 
 driven really good in training session.
 
