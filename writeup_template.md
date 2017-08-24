@@ -134,11 +134,12 @@ Fully-connected | 1
 ### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is example a images center lane driving:
-Left | Center | Right
----|---|---
-<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/left_2017_08_21_17_35_09_714.jpg" width="300"> |
-<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="300"> |
-<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/cright_2017_08_21_17_35_09_714.jpg" width="300">
+
+Lane | Image
+---| ---
+Left | <img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/left_2017_08_21_17_35_09_714.jpg" width="300"> 
+Center | <img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="300"> |
+Right |<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/cright_2017_08_21_17_35_09_714.jpg" width="300"> |
 
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
