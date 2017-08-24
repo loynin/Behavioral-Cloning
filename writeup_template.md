@@ -142,20 +142,11 @@ Center | <img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/ima
 Right |<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/right_2017_08_21_17_35_09_714.jpg" width="300"> |
 
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to get back to the road when it is got off from the road. 
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+To augment the data sat, I also flipped images and measurement thinking that this would make model more generalize to the road condition. For example, here is an image that has then been flipped:
 
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
+<img src="https://github.com/loynin/Behavioral-Cloning/blob/master/images/augment_image.png" width="300">
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
