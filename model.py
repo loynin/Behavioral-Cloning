@@ -24,7 +24,7 @@ print("Done importing modules...")
 
 #----Set training hyperameter---------------------------------------------
 
-epoch = 3
+epoch = 6
 batch_size = 100
 
 #-----Load data from recorded folder into reader -------------------------
@@ -176,7 +176,7 @@ def generator(X_data, batch_size = 32):
             for row in batch_samples:
                 steering_center = float(row[3])
                 # create adjusted steering measurements for the side camera images
-                correction = 0.2 # this is a parameter to tune
+                correction = 0.15 # this is a parameter to tune
                 steering_left = steering_center + correction
                 steering_right = steering_center - correction
 
