@@ -146,7 +146,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 To augment the data sat, I also flipped images and measurement thinking that this would make model more generalize to the road condition. For example, here is an image that has then been flipped:
 
-<img src="https://github.com/loynin/Behavioral-Cloning/blob/master/images/augment_image.png" width="300">
+<img src="https://github.com/loynin/Behavioral-Cloning/blob/master/images/augment_image.png" width="400">
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
