@@ -30,17 +30,6 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-[//]: # (Image References)
-
-[image1]: <img src="images/cnn-architecture.png" width="160"> "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
-
-
 ---
 # Files Submitted & Code Quality
 
@@ -144,11 +133,13 @@ Fully-connected | 1
 
 ### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is example a images center lane driving:
+Left | Center | Right
+---|---|--
+<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/left_2017_08_21_17_35_09_714.jpg" width="300"> |
+<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="300"> |
+<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/cright_2017_08_21_17_35_09_714.jpg" width="300">
 
-<img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="300">
-
-![alt text][image2]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
