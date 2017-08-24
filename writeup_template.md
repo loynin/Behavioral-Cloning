@@ -135,7 +135,7 @@ Fully-connected | 1
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is example a images center lane driving:
 
-Lane | Image
+Camera | Image
 ---| ---
 Left | <img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/left_2017_08_21_17_35_09_714.jpg" width="300"> 
 Center | <img src ="https://github.com/loynin/Behavioral-Cloning/blob/master/images/center_2017_08_21_17_35_09_714.jpg" width="300"> |
