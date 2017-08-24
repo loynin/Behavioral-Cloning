@@ -156,3 +156,9 @@ To augment the data sat, I also flipped images and measurement thinking that thi
 I finally randomly shuffled the data set and put **20%** of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+After training the model, I can run the simulation autonomous car successfully on the first track. There is still room to improve for this project such as providing more training data, augmenting data into different form, and improving driving behavior in the training mode in simulator.
+
+As a result, this project improves my skill in self-driving car by tech me how to train the car to drive by itself on the right track and to recover from the lost track. From this knowledge, I think that the implimentation of self-driving car in public is not far from the truth. 
+
+
