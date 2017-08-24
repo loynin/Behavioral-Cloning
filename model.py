@@ -203,9 +203,10 @@ def generator(X_data, batch_size = 32):
                     augmented_measurements.append(measurement* -1.0)    
     
             X_sub_train = np.array(augmented_images)
+            X_train_gray = np.sum(X_sub_train/3, axis = 3, keepdims = True)
             y_sub_train = np.array(augmented_measurements)
             #print ("X_sub_train shape", X_sub_train.shape)
-            yield sklearn.utils.shuffle(X_sub_train, y_sub_train)
+            yield sklearn.utils.shuffle(X_train_gray, y_sub_train)
             
 train_generator = generator(train_samples, batch_size)
 validation_generator = generator(validation_samples, batch_size)
@@ -218,7 +219,7 @@ print ("done loading data")
 print ("Training...")
 start_time= time.time()
 model = Sequential()
-model.add(Lambda(lambda x: x/255.0 - 0.5, input_shape=(160,320,3)))
+model.add(Lambda(lambda x: x/255.0 - 0.5, input_shape=(160,320,1)))
 model.add(Cropping2D(cropping=((70,25),(0,0))))
 #--------- Nvidia Model -----------------------------
 model.add(Conv2D(24,5,5,subsample=(2,2),activation="relu"))
@@ -231,6 +232,7 @@ model.add(Conv2D(64,3,3,activation="relu"))
 model.add(Conv2D(64,3,3,activation="relu"))
 model.add(Flatten())
 model.add(Dense(100))
+model.add(Dropout(0.2))
 model.add(Dense(50))
 model.add(Dense(1))
 
